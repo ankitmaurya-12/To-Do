@@ -15,16 +15,18 @@ html , body{
     /* background-color: #61eb78; */
     background-color: #fff;
     /* background-image: url("background.jpg"); */
+    background-size: cover;
 }
 
 .logo{
     width: 100%;
-    margin-top: 40px;
 }
 
 .logo h1{
     text-align: center;
     color : #fff;
+    /* margin-top: 40px; */
+    padding-top: 2%;
 }
 
 .container{
@@ -36,7 +38,6 @@ html , body{
     margin: 40px auto 0;
     background-size: cover;
     background-color: #fff;
-    background-size: cover;
     /* background-color: #add5e8; */
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }

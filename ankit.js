@@ -88,8 +88,6 @@ function changeBackground() {
         "/img/p6.jpg",
         "/img/p7.jpg",
         "/img/p8.jpg",
-        "/img/p9.jpg",
-        "/img/p10.jpg",
         // Add more image URLs as needed
     ];    
 
