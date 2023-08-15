@@ -18,6 +18,31 @@ html , body{
     background-size: cover;
 }
 
+.search-bar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar i {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-right: 4%;
+    padding-bottom: 5%;
+
+}
+
+#search-bar {
+    padding: 5px 5px 5px 5px;
+    width: 150px; /* Adjust the width as needed */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+
 .logo{
     width: 100%;
 }

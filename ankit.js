@@ -4,6 +4,9 @@ const inputField = document.querySelector(".input-field textarea");
 const todoList = document.querySelector(".todolist");
 const pendingNum = document.querySelector(".pending-tasks .pending-num");
 const clearButton = document.querySelector(".clear-button");
+
+const searchBar = document.getElementById("search-bar");
+
       
 // Output the selected elements for verification
 // console.log(inputField, todoList, pendingNum, clearButton);
@@ -99,4 +102,19 @@ clearButton.addEventListener("click",(e)=>{
     allTasks();
 })
 
+// Search functionality 
+searchBar.addEventListener("input", function () {
+    const allTasks = document.querySelectorAll(".list");
+
+    const searchText = searchBar.value.toLowerCase();
+
+    allTasks.forEach(task => {
+        const taskText = task.querySelector(".task").textContent.toLowerCase();
+        if (taskText.includes(searchText)) {
+            task.style.display = "flex";
+        } else {
+            task.style.display = "none";
+        }
+    });
+});
 
