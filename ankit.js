@@ -8,6 +8,30 @@ const clearButton = document.querySelector(".clear-button");
 // Output the selected elements for verification
 // console.log(inputField, todoList, pendingNum, clearButton);
 
+//to chnage background color evertime it load
+function changeBackground() {
+    const backgroundImages = [
+        "/img/p0.jpg",
+        "/img/p1.jpg",
+        "/img/p2.jpg",
+        "/img/p3.jpg",
+        "/img/p4.jpg",
+        "/img/p5.jpg",
+        "/img/p6.jpg",
+        "/img/p7.jpg",
+        "/img/p8.jpg",
+        // Add more image URLs as needed
+    ];    
+
+    const randomIndex = Math.floor(Math.random() * backgroundImages.length);
+    const selectedImage = backgroundImages[randomIndex];
+
+    document.body.style.backgroundImage = `url('${selectedImage}')`;
+}
+
+// Call the function when the page loads
+window.addEventListener("load", changeBackground);
+
 
 // we will call this function while adding , deleteing and checking-unchecking the task
 function allTasks(){
@@ -76,26 +100,3 @@ clearButton.addEventListener("click",(e)=>{
 })
 
 
-//to chnage background color evertime it load
-function changeBackground() {
-    const backgroundImages = [
-        "/img/p0.jpg",
-        "/img/p1.jpg",
-        "/img/p2.jpg",
-        "/img/p3.jpg",
-        "/img/p4.jpg",
-        "/img/p5.jpg",
-        "/img/p6.jpg",
-        "/img/p7.jpg",
-        "/img/p8.jpg",
-        // Add more image URLs as needed
-    ];    
-
-    const randomIndex = Math.floor(Math.random() * backgroundImages.length);
-    const selectedImage = backgroundImages[randomIndex];
-
-    document.body.style.backgroundImage = `url('${selectedImage}')`;
-}
-
-// Call the function when the page loads
-window.addEventListener("load", changeBackground);
